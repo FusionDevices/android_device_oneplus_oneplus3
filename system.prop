@@ -82,6 +82,9 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Media
+persist.media.treble_omx=false
+
 # NFC
 ro.nfc.port=I2C
 
