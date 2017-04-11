@@ -35,6 +35,7 @@ qcom.bluetooth.soc=rome
 
 # Camera
 #persist.camera.HAL3.enabled=1
+persist.camera.hal.debug=0
 
 # Display power reduction (FOSS)
 ro.qcom.dpps.sensortype=3
