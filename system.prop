@@ -78,6 +78,11 @@ sdm.debug.disable_skip_validate=1
 # IMS
 persist.volte_enabled_by_hw=1
 persist.data.iwlan.enable=true
+service.qti.ims.enabled=1
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
 
 # Media
 persist.media.treble_omx=false
