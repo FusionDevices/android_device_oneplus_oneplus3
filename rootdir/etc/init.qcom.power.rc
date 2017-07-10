@@ -132,6 +132,12 @@ on enable-low-power
     # Starting io prefetcher service
     start iop
 
+    # Adjust Schedutil tunables for better performance
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us "500"
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us "10000"
+    write /sys/devices/system/cpu/cpu2/cpufreq/schedutil/up_rate_limit_us "500"
+    write /sys/devices/system/cpu/cpu2/cpufreq/schedutil/down_rate_limit_us "10000"
+
     setprop sys.io.scheduler cfq
 
     # update cpusets now that boot is complete and we want better load balancing
