@@ -148,11 +148,10 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 #TARGET_USES_HWC2 := true
 
 # Enable dexpreopt to speed boot time
-ifeq ($(HOST_OS),linux)
-  ifeq ($(call match-word-in-list,$(TARGET_BUILD_VARIANT),user),true)
-    ifeq ($(WITH_DEXPREOPT),)
+ifeq ($(TARGET_BUILD_VARIANT),user)
+  ifeq ($(HOST_OS),linux)
       WITH_DEXPREOPT := true
-    endif
+      WITH_DEXPREOPT_PIC := true
   endif
 endif
 
