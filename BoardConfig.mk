@@ -73,6 +73,10 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/msm8996
 TARGET_KERNEL_CONFIG := lineageos_oneplus3_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
+# Clang
+CLANG_FAST := true
+TARGET_USE_SDCLANG := true
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
