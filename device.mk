@@ -279,6 +279,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8996
 
+# Prebuilds
+PRODUCT_PACKAGES += \
+    OnePlusMusic \
+    OnePlusCamera \
+    OnePlusCameraService \
+    OnePlusGallery \
+    GoogleCamera\
+    Substratum
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuild/lib64/libfilter-sdk.so:system/lib64/libfilter-sdk.so \
+    $(LOCAL_PATH)/prebuild/lib64/libopbaselib.so:system/lib64/libopbaselib.so \
+    $(LOCAL_PATH)/prebuild/lib64/libopcamera.so:system/lib64/libopcamera.so \
+    $(LOCAL_PATH)/prebuild/lib64/libopcameralib.so:system/lib64/libopcameralib.so
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
