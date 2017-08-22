@@ -164,6 +164,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@3.2-impl \
     libcamera_shim
 
 # Connectivity Engine support (CNE)
