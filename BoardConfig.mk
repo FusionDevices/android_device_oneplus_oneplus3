@@ -77,9 +77,6 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 CLANG_FAST := true
 TARGET_USE_SDCLANG := true
 
-# QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
 
@@ -217,9 +214,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/oneplus/oneplus3
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
-
-# Timeservice
-BOARD_USES_QC_TIME_SERVICES := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
