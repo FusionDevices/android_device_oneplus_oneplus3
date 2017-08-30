@@ -325,6 +325,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
