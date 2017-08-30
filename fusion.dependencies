@@ -19,7 +19,7 @@
  },
  {
     "remote"      : "fusion",
-    "repository"  : "OctopusParty/proprietary_vendor_oneplus3",
+    "repository"  : "OctopusParty/proprietary_vendor_oneplus",
     "target_path" : "vendor/oneplus",
     "revision"    : "n-mr2"
  },
