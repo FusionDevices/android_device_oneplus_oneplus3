@@ -286,15 +286,14 @@ PRODUCT_PACKAGES += \
     GoogleCamera
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuild/lib/libcameraservice.so:system/lib/libcameraservice.so \
-    $(LOCAL_PATH)/prebuild/lib64/libcameraservice.so:system/lib64/libcameraservice.so \
-    $(LOCAL_PATH)/prebuild/lib64/libfilter-sdk.so:system/lib64/libfilter-sdk.so \
-    $(LOCAL_PATH)/prebuild/lib64/libopbaselib.so:system/lib64/libopbaselib.so \
-    $(LOCAL_PATH)/prebuild/lib64/libopcamera.so:system/lib64/libopcamera.so \
-    $(LOCAL_PATH)/prebuild/lib64/libopcameralib.so:system/lib64/libopcameralib.so
-
-#    $(LOCAL_PATH)/prebuild/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so \
-#    $(LOCAL_PATH)/prebuild/lib64/libmediaplayerservice.so:system/lib64/libmediaplayerservice.so \
+    $(LOCAL_PATH)/prebuilt/lib/libcameraservice.so:system/lib/libcameraservice.so \
+    $(LOCAL_PATH)/prebuilt/lib64/libcameraservice.so:system/lib64/libcameraservice.so \
+    $(LOCAL_PATH)/prebuilt/lib64/libfilter-sdk.so:system/lib64/libfilter-sdk.so \
+    $(LOCAL_PATH)/prebuilt/lib64/libopbaselib.so:system/lib64/libopbaselib.so \
+    $(LOCAL_PATH)/prebuilt/lib64/libopcamera.so:system/lib64/libopcamera.so \
+    $(LOCAL_PATH)/prebuilt/lib64/libopcameralib.so:system/lib64/libopcameralib.so
+#   $(LOCAL_PATH)/prebuilt/lib/libmediaplayerservice.so:system/lib/libmediaplayerservice.so \
+#   $(LOCAL_PATH)/prebuilt/lib64/libmediaplayerservice.so:system/lib64/libmediaplayerservice.so \
 
 # QMI
 PRODUCT_PACKAGES += \
