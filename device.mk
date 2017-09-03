@@ -283,8 +283,7 @@ PRODUCT_PACKAGES += \
     OnePlusCamera \
     OnePlusCameraService \
     OnePlusGallery \
-    GoogleCamera \
-    Substratum
+    GoogleCamera
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuild/lib/libcameraservice.so:system/lib/libcameraservice.so \
