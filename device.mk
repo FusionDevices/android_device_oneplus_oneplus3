@@ -283,7 +283,7 @@ PRODUCT_PACKAGES += \
     OnePlusCamera \
     OnePlusCameraService \
     OnePlusGallery \
-    GoogleCamera\
+    GoogleCamera \
     Substratum
 
 PRODUCT_COPY_FILES += \
