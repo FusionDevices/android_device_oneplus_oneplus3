@@ -191,8 +191,8 @@ PRODUCT_PACKAGES += \
     qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    OneplusDoze
+#PRODUCT_PACKAGES += \
+#    OneplusDoze
 
 # FFMPEG
 #WITH_FFMPEG := true
@@ -201,7 +201,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fingerprintd \
     android.hardware.biometrics.fingerprint@2.1-service \
-    fingerprint.msm8996 \
+    fingerprint.msm8996
 
 # For config.fs
 PRODUCT_PACKAGES += \
