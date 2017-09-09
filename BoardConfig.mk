@@ -158,12 +158,8 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 #TARGET_USES_HWC2 := true
 
 # Enable dexpreopt to speed boot time
-ifeq ($(TARGET_BUILD_VARIANT),user)
-  ifeq ($(HOST_OS),linux)
-      WITH_DEXPREOPT := true
-      WITH_DEXPREOPT_PIC := true
-  endif
-endif
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_PIC := true
 
 # GPS
 TARGET_NO_RPC := true
