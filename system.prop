@@ -34,7 +34,7 @@ persist.bt.enableAptXHD=true
 qcom.bluetooth.soc=rome
 
 # Camera
-persist.camera.hal.debug=0
+#persist.camera.HAL3.enabled=1
 
 # Display power reduction (FOSS)
 ro.qcom.dpps.sensortype=3
