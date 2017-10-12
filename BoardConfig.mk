@@ -78,8 +78,8 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 KERNEL_TOOLCHAIN_PREFIX :=$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-6.x/bin/aarch64-linux-android-
 
 # Clang
-CLANG_FAST := true
-TARGET_USE_SDCLANG := true
+# CLANG_FAST := true
+# TARGET_USE_SDCLANG := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
