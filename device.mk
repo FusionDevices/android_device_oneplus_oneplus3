@@ -405,7 +405,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+# $(call inherit-product, device/oppo/common/common.mk)
 
 # MSM8996 Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
