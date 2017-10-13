@@ -41,8 +41,7 @@ image_partitions = {
    'devcfg.mbn'        : 'devcfg',
    'keymaster.mbn'     : 'keymaster',
    'xbl.elf'           : 'xbl',
-   'adspso.bin'        : 'dsp',
-   'lksecapp.mbn'      : 'lksecapp'
+   'adspso.bin'        : 'dsp'
 }
 
 def FullOTA_InstallEnd(info):
