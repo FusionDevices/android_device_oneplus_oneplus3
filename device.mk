@@ -185,7 +185,7 @@ PRODUCT_PACKAGES += \
     OneplusDoze
 
 # FFMPEG
-WITH_FFMPEG := true
+#WITH_FFMPEG := true
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
