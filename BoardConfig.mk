@@ -220,9 +220,6 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Releasetools extension for shipping firmware
-TARGET_RELEASETOOLS_EXTENSIONS := device/oneplus/oneplus3
-
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
