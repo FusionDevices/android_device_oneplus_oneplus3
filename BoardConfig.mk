@@ -158,8 +158,8 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 #TARGET_USES_HWC2 := true
 
 # Enable dexpreopt to speed boot time
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_PIC := true
+WITH_DEXPREOPT := false
+#WITH_DEXPREOPT_PIC := true
 
 # GPS
 TARGET_NO_RPC := true
