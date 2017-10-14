@@ -28,6 +28,9 @@ const char *_ZN7android16CameraParameters19CLIENT_PACKAGE_NAMEE = "client-packag
 const char *_ZN7android16CameraParameters31KEY_SUPPORTED_VIDEO_SIZES_60FPSE = "support-60fps-video-sizes";
 void _ZN7android20DisplayEventReceiverC1Ev() {}
 
+// needed by libcameraservice.so
+void _ZN7android15BatteryNotifier16noteFlashlightOnERKNS_7String8Ei {}
+
 // needed by libFNVfbEngineHAL.so
 void _ZN7android13GraphicBuffer10reallocateEjjij() {}
 
