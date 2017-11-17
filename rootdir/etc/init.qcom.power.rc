@@ -118,6 +118,11 @@ on boot
     # Enable sched boost
     write /proc/sys/kernel/sched_boost 1
 
+    # Set I/O Scheduler tweaks
+    write /sys/block/sda/queue/scheduler maple
+    write /sys/block/sda/queue/read_ahead_kb 512
+    write /sys/block/sda/queue/iosched/fifo_batch 16
+
 on charger
     write /sys/devices/system/cpu/cpu1/online 0
     write /sys/devices/system/cpu/cpu2/online 0
@@ -127,7 +132,7 @@ on charger
     start dashd
 
 on property:dev.bootcomplete=1
-    setprop sys.io.scheduler "bfq"
+    setprop sys.io.scheduler "maple"
     write /proc/sys/kernel/sched_boost 0
     # update cpusets now that boot is complete and we want better load balancing
     write /dev/cpuset/top-app/cpus 0-3
