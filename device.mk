@@ -320,7 +320,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
-    power.msm8996
+    android.hardware.power@1.0-service.oneplus3
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml
@@ -381,9 +381,6 @@ PRODUCT_PACKAGES += \
     vr.msm8996 \
     android.hardware.vr@1.0-impl \
     android.hardware.vr@1.0-service
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml
 
 # USB HAL
 PRODUCT_PACKAGES += \
