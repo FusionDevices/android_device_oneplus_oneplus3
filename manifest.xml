@@ -5,7 +5,7 @@
         <version>1.0</version>
         <interface>
             <name>IThermal</name>
-            <instance>msm8996</instance>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -14,7 +14,7 @@
         <version>1.0</version>
         <interface>
             <name>IVr</name>
-            <instance>msm8996</instance>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
