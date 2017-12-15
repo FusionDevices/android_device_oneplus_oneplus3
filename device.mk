@@ -182,6 +182,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OneplusDoze
 
+# Device Extras
+PRODUCT_PACKAGES += \
+    Oneplus3Parts
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
