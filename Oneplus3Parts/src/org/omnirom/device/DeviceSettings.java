@@ -54,7 +54,6 @@ public class DeviceSettings extends PreferenceActivity implements
     public static final String KEY_HBM_SWITCH = "hbm";
     public static final String KEY_PROXI_SWITCH = "proxi";
     public static final String KEY_DCI_SWITCH = "dci";
-    private static final String KEY_ALWAYS_ON_SWITCH = "doze_always_on";
     final String KEY_DEVICE_DOZE = "device_doze";
     final String KEY_DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
@@ -67,7 +66,6 @@ public class DeviceSettings extends PreferenceActivity implements
     private TwoStatePreference mSRGBModeSwitch;
     private TwoStatePreference mHBMModeSwitch;
     private TwoStatePreference mDCIModeSwitch;
-    private TwoStatePreference mAlwaysOnSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -123,15 +121,10 @@ public class DeviceSettings extends PreferenceActivity implements
             graphicsCategory.removePreference(mDCIModeSwitch);
         }
 
-        mAlwaysOnSwitch = (TwoStatePreference) findPreference(KEY_ALWAYS_ON_SWITCH);
-        mAlwaysOnSwitch.setChecked(Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.DOZE_ALWAYS_ON, 0) != 0);
-
         if (!isAppInstalled(KEY_DEVICE_DOZE_PACKAGE_NAME)) {
             PreferenceCategory displayCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_DISPLAY);
             displayCategory.removePreference(findPreference(KEY_DEVICE_DOZE));
         }
-
     }
 
     @Override
@@ -144,16 +137,6 @@ public class DeviceSettings extends PreferenceActivity implements
             break;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mAlwaysOnSwitch) {
-            Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.DOZE_ALWAYS_ON, mAlwaysOnSwitch.isChecked() ? 1 : 0);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override

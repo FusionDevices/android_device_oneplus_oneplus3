@@ -30,8 +30,6 @@
     <string name="hbm_mode_title">Повышенная яркость</string>
     <string name="proxi_summary_head">Проверять датчик приближения при использовании жестов и сканера отпечатков</string>
     <string name="proxi_title_head">Датчик приближения</string>
-    <string name="taptowake_summary">Использовать двойное нажатие для включения</string>
-    <string name="taptowake_title">Нажать для включения</string>
     <string name="slider_mode_off">Выкл</string>
     <string name="slider_mode_vibrate">Вибрация</string>
     <string name="slider_mode_silent">Тихий</string>
@@ -67,6 +65,6 @@
     <string name="category_right_swipe_gesture">Свайп слева направо</string>
 
     <string name="display_title">Экран</string>
-    <string name="doze_always_on_title">Всегда включенный экран</string>
     <string name="device_doze_title">Индикация событий</string>
+
 </resources>
