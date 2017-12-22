@@ -34,8 +34,8 @@ persist.bt.enableAptXHD=true
 qcom.bluetooth.soc=rome
 
 # Camera
-#persist.camera.HAL3.enabled=1
-persist.camera.hal.debug=0
+camera.hal1.packagelist=com.oneplus.camera
+Camera.no_navigation_bar=true
 
 # Display power reduction (FOSS)
 ro.qcom.dpps.sensortype=3
@@ -77,9 +77,6 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=0
 persist.dbg.wfc_avail_ovr=0
 
-# Media
-persist.media.treble_omx=false
-
 # NFC
 ro.nfc.port=I2C
 
@@ -107,8 +104,17 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
+
+#Enable Dual SIM feature
 persist.radio.multisim.config=dsds
+
+#for ecc call
+persist.radio.enhance_ecall=true
+
 persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt
+persist.radio.rat_on=combine
+persist.radio.ignore_dom_time=10
 ro.telephony.call_ring.multiple=false
 persist.radio.apm_sim_not_pwdn=1
 persist.radio.custom_ecc=1
@@ -116,7 +122,6 @@ persist.radio.sib16_support=1
 persist.data.qmi.adb_logmask=0
 persist.net.doxlat=true
 persist.oem.dump=0
-persist.radio.ignore_dom_time=5
 persist.radio.hw_mbn_update=0
 persist.radio.sw_mbn_update=0
 persist.radio.start_ota_daemon=1
@@ -133,10 +138,29 @@ persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
 
 # Storage
-#ro.sys.sdcardfs=true
+ro.sys.sdcardfs=true
 
 # Timeservice
 persist.timed.enable=true
 
 # Wifi
 wifi.interface=wlan0
+
+# Google Assistant
+ro.opa.eligible_device=true
+
+# Google WFD settings
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
+# WFD WL solution
+ro.vendor.wl_library=libqti-wl.so
+
+#Increase cached app limit
+ro.vendor.qti.sys.fw.bg_apps_limit=32
+
+# Enable device orientation sensor
+ro.qti.sensors.dev_ori=false
+ro.qti.sensors.pmd=false
+ro.qti.sensors.sta_detect=false
+ro.qti.sensors.mot_detect=false
